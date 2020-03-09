@@ -15,6 +15,12 @@ Environmental Variables
 Export FLASK_APP=index.py
 
 
+Code Modification Variables
+-------------------------
+** Change the IP address of into the folder where index.py exist
+
+Replace <IP_ADDRESS_HERE> with the IP address of your InfluxDB
+
 To Run
 -------------------------
 ** Environmental Variables must be configured first
