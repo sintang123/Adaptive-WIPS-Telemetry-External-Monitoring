@@ -16,8 +16,10 @@ def home():
     return render_template('template.html', posts=value)
 
 def getDataFromDB():
-	#url = "http://10.68.34.87:8086/query?db=mdt_db&q=SELECT * FROM \"Cisco-IOS-XE-wireless-awips-oper:awips-oper-data/awips-alarm\""
-	url = "http://<IP_ADDRESS_HERE>:8086/query?db=mdt_db&q=SELECT * FROM \"Cisco-IOS-XE-wireless-awips-oper:awips-oper-data/awips-alarm\""
+
+	InfluxDB_IP = "<IP_ADDRESS>"
+
+	url = "http://" + InfluxDB_IP + ":8086/query?db=mdt_db&q=SELECT * FROM \"Cisco-IOS-XE-wireless-awips-oper:awips-oper-data/awips-alarm\""
 	
 	payload = {}
 	headers = {}
