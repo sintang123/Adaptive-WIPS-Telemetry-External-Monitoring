@@ -1,0 +1,22 @@
+Python3 Dependencies
+------------------------------
+
+sudo apt-get install python3-pip
+
+pip3 install python-dateutil
+
+pip3 install flask
+
+
+Environmental Variables
+-------------------------
+** Navigate into the folder where index.py exist
+
+Export FLASK_APP=index.py
+
+
+To Run
+-------------------------
+** Environmental Variables must be configured first
+
+Flask run

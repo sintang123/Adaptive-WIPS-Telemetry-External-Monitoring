@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Table V04</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
+</head>
+<body>
+<center>
+<h1 style="font-family: 'Raleway', sans-serif; font-size: 50px; color: #1E90FF">Adaptive Wireless Intrusion Prevention System</h1>
+<h2 style="font-family: 'Raleway', sans-serif; font-size: 30px">External Logging & Monitoring</h2>
+<br/>
+
+<h3>Catalyst 9800-CL (IOS-XE 17.1)</h3>
+
+
+<table class="pure-table">
+    <thead>
+        <tr>
+            <th align="center">Date & Time</th>
+			<th align="center">WLC</th>
+			<th align="center">Alarm ID</th>
+			<th align="center">Alarm Description</th>
+			<th align="center">AP MAC</th>
+			<th align="center">Client MAC</th>
+			<th align="center">Signature ID</th>
+        </tr>
+    </thead>
+    <tbody>
+    	{% for post in posts %}
+		<tr class="row100 body">
+			<td>{{ post[0] }}</td>
+			<td>{{ post[2] }}</td>
+			<td align="center">{{ post[3] }}</td>
+			<td>{{ post[4] }}</td>
+			<td align="center">{{ post[6] }}</td>
+			<td align="center">{{ post[7] }}</td>
+			<td align="center">{{ post[9] }}</td>
+		</tr>
+		{% endfor %}     
+    </tbody>
+</table>
+</center>
+</body>
+</html>
+
