@@ -51,6 +51,11 @@ On the terminal:
 
 flask run
 
+## Dashboard
+
+Navigate to the Dashbaord URL: http://localhost:5000/
+
+Dashboard GUI: https://photos.app.goo.gl/tSr8GNQLAonyrt1N8
 
 
 
